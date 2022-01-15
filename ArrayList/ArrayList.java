@@ -44,7 +44,7 @@ public class ArrayList<E> {
         }
     }
 
-    //Throw "Index Out of Bounds" if sought index is out of key bounds.
+    //Throws "Index Out of Bounds" if sought index is out of key bounds.
     private void index_check2(int i) throws IndexOutOfBoundsException {
         if (i < 0 || i > size) {
             throw new IndexOutOfBoundsException("Index Out of Bounds" + i);
