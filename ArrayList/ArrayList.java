@@ -167,6 +167,7 @@ public class ArrayList<E> {
         return new ArrayListIterator();
     }
 
+    //Designated main method.
     public static void main(String[] args) {
         System.out.println("This is my ArrayList Program! Feel free to " +
                 "check out my test cases!");
