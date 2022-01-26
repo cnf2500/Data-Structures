@@ -6,13 +6,14 @@
  */
 
 import static org.junit.Assert.*;
+import org.junit.jupiter.api.Test;
 
 class ArrayListTest {
 
     private ArrayList olympus = new ArrayList();
 
     //Tests the number of values in the array.
-    @org.junit.jupiter.api.Test
+    @Test
     void size() {
         olympus.add(0,"Apollo");
         olympus.add(1,"Hera");
@@ -22,7 +23,7 @@ class ArrayListTest {
     }
 
     //Tests if the array contains no values.
-    @org.junit.jupiter.api.Test
+    @Test
     void isEmpty() {
         olympus.add(0,"Zeus");
         olympus.remove(0);
@@ -31,7 +32,7 @@ class ArrayListTest {
     }
 
     //Tests the array's present capacity.
-    @org.junit.jupiter.api.Test
+    @Test
     void capacity() {
         olympus.add(0,"Athena");
         olympus.add(1,"Hera");
@@ -44,7 +45,7 @@ class ArrayListTest {
      * Tests whether the 'get' value is the same value that is currently stored at the specified
      * index (i) in the array.
      */
-    @org.junit.jupiter.api.Test
+    @Test
     void get() {
         olympus.add(0,"Zeus");
         olympus.add(1,"Hades");
@@ -57,7 +58,7 @@ class ArrayListTest {
      * Tests if the former value at the specified index (i) in the array is properly replaced by the
      * new specified value (e).
      */
-    @org.junit.jupiter.api.Test
+    @Test
     void set() {
         olympus.add(0,"Zeus");
         olympus.add(1,"Hades");
@@ -67,7 +68,7 @@ class ArrayListTest {
     }
 
     //Tests if the specified value (e) is properly inserted at the specified index (i) in the array.
-    @org.junit.jupiter.api.Test
+    @Test
     void add() {
         olympus.add(0, "Zeus");
         olympus.add(1, "Hades");
@@ -88,7 +89,7 @@ class ArrayListTest {
     }
 
     //Tests if the value at the specified index (i) is properly removed.
-    @org.junit.jupiter.api.Test
+    @Test
     void remove() {
         olympus.add(0, "Zeus");
         olympus.add(1, "Hades");
@@ -98,7 +99,7 @@ class ArrayListTest {
     }
 
     //Tests if the specified value (e) is added to the first index in the array.
-    @org.junit.jupiter.api.Test
+    @Test
     void addFirst() {
         olympus.add(0, "Hades");
         olympus.add(1, "Artemis");
@@ -110,7 +111,7 @@ class ArrayListTest {
     }
 
     //Tests if the specified value (e) is added to the last index in the array.
-    @org.junit.jupiter.api.Test
+    @Test
     void addLast() {
         olympus.add(0, "Athena");
         olympus.add(1, "Hestia");
@@ -122,7 +123,7 @@ class ArrayListTest {
     }
 
     //Tests if the specified value (e) is removed from the first index in the array.
-    @org.junit.jupiter.api.Test
+    @Test
     void removeFirst() {
         olympus.add(0, "Zeus");
         olympus.add(1, "Hades");
@@ -132,7 +133,7 @@ class ArrayListTest {
     }
 
     //Tests if the specified value (e) is removed from the last index in the array.
-    @org.junit.jupiter.api.Test
+    @Test
     void removeLast() {
         olympus.add(0, "Apollo");
         olympus.add(1, "Artemis");
