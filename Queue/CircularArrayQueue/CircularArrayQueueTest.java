@@ -5,15 +5,15 @@
  * Description: Tests created to assess my Circular Array Queue.
  */
 
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertTrue;
+import org.junit.jupiter.api.Test;
+import static org.junit.Assert.*;
 
 class CircularArrayQueueTest {
 
     private CircularArrayQueue deck = new CircularArrayQueue(13);
 
     //Tests the number of values in the queue.
-    @org.junit.jupiter.api.Test
+    @Test
     void size() {
         deck.enqueue("Ace");
         deck.enqueue("King");
@@ -24,7 +24,7 @@ class CircularArrayQueueTest {
     }
 
     //Tests if the array contains no values.
-    @org.junit.jupiter.api.Test
+    @Test
     void isEmpty() {
         deck.enqueue("Eight");
         deck.dequeue();
@@ -36,7 +36,7 @@ class CircularArrayQueueTest {
      * First test to determine if the specified value is in the first
      * index of the queue.
      */
-    @org.junit.jupiter.api.Test
+    @Test
     void first1() {
         deck.enqueue("Three");
         deck.enqueue("Jack");
@@ -48,7 +48,7 @@ class CircularArrayQueueTest {
      * Second test to determine if the specified value is in the first
      * index of the queue.
      */
-    @org.junit.jupiter.api.Test
+    @Test
     void first2() {
         deck.enqueue("Four");
         deck.enqueue("Five");
@@ -63,7 +63,7 @@ class CircularArrayQueueTest {
     }
 
     //Tests if the specified values (e) have been inserted into the queue.
-    @org.junit.jupiter.api.Test
+    @Test
     void enqueue() {
         deck.enqueue("Queen");
         deck.enqueue("Nine");
@@ -73,7 +73,7 @@ class CircularArrayQueueTest {
     }
 
     //Tests if the first value of the queue is removed.
-    @org.junit.jupiter.api.Test
+    @Test
     void dequeue() {
         deck.enqueue("King");
         deck.enqueue("One");
