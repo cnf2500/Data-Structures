@@ -10,6 +10,7 @@ import java.util.Iterator;
 public class ArrayList<E> {
 
     /*
+     * @param capacity - current capacity of array.
      * @param array - generic array used for storage.
      * @param size - current number of values in the array.
      */
